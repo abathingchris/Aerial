@@ -210,7 +210,7 @@ NSOutlineViewDelegate, VideoDownloadDelegate {
     
     @IBAction func pageProjectClick(_ button: NSButton?) {
         let workspace = NSWorkspace.shared()
-        let url = URL(string: "http://github.com/JohnCoates/Aerial")!
+        let url = URL(string: "http://github.com/abathingchris/Aerial")!
         workspace.open(url)
     }
     
