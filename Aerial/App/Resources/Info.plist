@@ -35,5 +35,7 @@
 	</dict>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>apiURL</key>
+	<string>https://s3-us-west-1.amazonaws.com/aerial.nito.io/entries.json</string>
 </dict>
 </plist>

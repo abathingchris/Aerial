@@ -73,7 +73,14 @@ class ManifestLoader {
             })
             
         }
-        let apiURL = "http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/entries.json"
+
+		var apiURL = "http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/entries.json"
+
+		if let infoPlist = Bundle.main.infoDictionary,
+			let apiURLString: String = infoPlist["apiURL"] as? String {
+			apiURL = apiURLString
+		}
+
         guard let url = URL(string: apiURL) else {
             fatalError("Couldn't init URL from string")
         }

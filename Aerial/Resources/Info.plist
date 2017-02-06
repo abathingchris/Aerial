@@ -29,5 +29,7 @@
 	<string>1.2.0</string>
 	<key>NSPrincipalClass</key>
 	<string>AerialView</string>
+	<key>apiURL</key>
+	<string>https://s3-us-west-1.amazonaws.com/aerial.nito.io/entries.json</string>
 </dict>
 </plist>
